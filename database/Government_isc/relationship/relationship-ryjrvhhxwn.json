@@ -1,0 +1,26 @@
+{
+	"name": "relationship-ryjrvhhxwn",
+	"properties": {
+		"Name": "relationship-ryjrvhhxwn",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "Government_isc"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Vendor",
+		"ToTableName": "Order",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "VendorId",
+				"ToColumnName": "VendorId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Vendor.cdm.json/Vendor\",\"toEntity\":\"Order.cdm.json/Order\",\"joinPairs\":[{\"fromAttribute\":\"VendorId\",\"toAttribute\":\"VendorId\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}

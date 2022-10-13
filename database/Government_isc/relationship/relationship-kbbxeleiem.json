@@ -1,0 +1,26 @@
+{
+	"name": "relationship-kbbxeleiem",
+	"properties": {
+		"Name": "relationship-kbbxeleiem",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "Government_isc"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Item",
+		"ToTableName": "GovernmentService",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "ItemSku",
+				"ToColumnName": "ItemSku"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Item.cdm.json/Item\",\"toEntity\":\"GovernmentService.cdm.json/GovernmentService\",\"joinPairs\":[{\"fromAttribute\":\"ItemSku\",\"toAttribute\":\"ItemSku\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}

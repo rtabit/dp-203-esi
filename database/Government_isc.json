@@ -1,0 +1,24 @@
+{
+	"name": "Government_isc",
+	"properties": {
+		"Name": "Government_isc",
+		"EntityType": "DATABASE",
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Government\",\"Version\":\"1.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://tempdata@asadatalake67xklnc.dfs.core.windows.net/Government_isc",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "asaworkspace67xklnc-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}

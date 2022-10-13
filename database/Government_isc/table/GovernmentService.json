@@ -1,0 +1,763 @@
+{
+	"name": "GovernmentService",
+	"properties": {
+		"Name": "GovernmentService",
+		"EntityType": "TABLE",
+		"Namespace": {
+			"DatabaseName": "Government_isc"
+		},
+		"Description": "A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\n\nThere are two basic types of products:\n\n- Tangible (physical)\n- Intangible (non-physical) such as services\n\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\n\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\n\nA product typically goes through five stages of development:\n\n(1) Idea Stage - involving a thorough evaluation of the potential product\n\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\n\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\n\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\n\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\n\nProducts tend to be categorized as either:  Industrial goods and consumer goods\n\nIndustrial goods are used to produce other products .\n\nIndustrial goods may be further divided into:\n\n- Raw materials\n- Equipment\n- Pre-built materials \n- Supplies.\n\nConsumer goods are intended for consumption by the general public.\n\nConsumer goods may be further divided into:\n\n- Durable goods\n- Nondurable goods\n- Packaged goods\n\nA product may be a member of a product family or product line.\n\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\n\nMembers of a product family frequently have many common parts and assemblies.\n\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\n\nEx:\nThe Apple Macintosh family of products consists of the product lines:\n- Mac mini\n- MacBook Pro\n- Mac Pro\n\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\n\nA Product Family typically is created to address one or five functions:\n\n1. To increase profits and not erode the sales of existing products\n\n2. To attract additional Markets or Market Segments\n\n3. To counter competitor's products\n\n4. To fill a gap in an existing Product Family.\n\n5. To promote sales of other products in the family line\n\nLine Depth refers to the number of products in the product line.\n\nLine consistency refers to how closely related the products are that make up the product line.\n\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\n\nProduct width refers to the number of different product lines sold by a company.\n\nProduct mix refers to the total number of products sold in all product lines.\n\nLine extension refers to the adding of a new product to a line.\n\n\"Trading up or brand leveraging\" refers to adding a product of better quality to a product line than the other products in that line.\n\n\"Trading down\" refers to adding a product of lesser quality to a product line than the other products in that line.\n\nIf a line of products is sold with the same brand name, this is referred to as family branding.\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\nProduct-line managers typically have the following responsibilities:\n- Expansion and composition of a product line\n- Evaluate the effects of product mixes on the profitability of other items in the line\n- Planning and allocation of resources to individual products in the line\nA product is normally associated with a brand strategy - manufacturer, private or generic.\n\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\n\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\n\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\n\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\n\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\n\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\n\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\n\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\n\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\n\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\n\nBy contrast, family branding has several advantages.\n\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\n\nReduced or eliminated time for name identification and advertising for name recognition purposes.",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+				{
+					"Name": "ProductId",
+					"Description": "The unique identifier of a Product.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "ProductId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceName",
+					"Description": "The name of the Product, which normally corresponds to the 'marketing name' of the Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceShortDescription",
+					"Description": "The short description of the Government Service",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceShortDescription"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceDescription",
+					"Description": "The description of the Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceDescription"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceInternalName",
+					"Description": "The internal name by which a Government Service is known.\n\nThis normally approximates the business name by which the public identifies the Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceInternalName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceIntendedUse",
+					"Description": "The intended use of the government service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceIntendedUse"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceMissionStatement",
+					"Description": "A statement of the goals and objectives of the associated Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceMissionStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceEligibilityRequirementsStatement",
+					"Description": "A statement of the eligibility requirements of the associated Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceEligibilityRequirementsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceRestrictionsStatement",
+					"Description": "A statement of the restrictions of the associated Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceRestrictionsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServicePrivacyStatement",
+					"Description": "A statement regarding the privacy rules and regulations applicable to the Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServicePrivacyStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceTargetMarketSegmentStatement",
+					"Description": "A statement describing the target market segment to be addressed by the Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceTargetMarketSegmentStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceIntroductionDate",
+					"Description": "The date that the Government Service was introduced.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceIntroductionDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServicePlannedAbandonmentDate",
+					"Description": "The planned date to discontinue marketing the government service.\n\nAbandonment is a component in the decline stage of the product's life cycle characterized by a reduced market demand for the product and an increased number of competing products with similar characteristics.\n\nThere are three (3) strategies for abandoning a product:\n\n(1)  Reduced marketing and expenditures to maintain profits.\n\n(2)  Concentrating on the strongest market segments and eliminating the weaker market segments\n\n(3)  Maintain the marketing level until the product is discontinued.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServicePlannedAbandonmentDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceActualAbandonmentDate",
+					"Description": "The actual date that the marketing of the government service was discontinued. \n\nAbandonment is a component in the decline stage of the product's life cycle characterized by a reduced market demand for the product and an increased number of competing products with similar characteristics.\n\nThere are three (3) strategies for abandoning a product:\n\n(1)  Reduced marketing and expenditures to maintain profits.\n\n(2)  Concentrating on the strongest market segments and eliminating the weaker market segments\n\n(3)  Maintain the marketing level until the product is discontinued.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceActualAbandonmentDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceInformationContactTelephoneNumber",
+					"Description": "The telephone number to call for information regarding the Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceInformationContactTelephoneNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 15,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceContactTelephoneNumber",
+					"Description": "The telephone number to contact for service issues.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceContactTelephoneNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 15,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentServiceInformationUrl",
+					"Description": "The URL to browse for information regarding the Government Service.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentServiceInformationUrl"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2083,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GlobalTradeItemNumber",
+					"Description": "The Global Trade Item Number (GTIN) is an identifier for trade items that was developed by GS1.\n\nA GTIN can be assigned to only one brick.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GlobalTradeItemNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 14,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GtinName",
+					"Description": "A note, comment or additional information regarding the Product GTIN.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GtinName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "EuropeanArticleNumber",
+					"Description": "A 13 digit barcoding standard which is a superset of the original 12-digit Universal Product Code (UPC).\n\naka International Article Number (abbreviation of EAN retained)",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "EuropeanArticleNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 13,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "UniversalProductCode",
+					"Description": "A system that identifies products by type and by manufacturer.  \n\nA UPC consists of eleven (11) digits.  Six (6) indicate the Manufacturer and five (5) digits describe the product.\n\nUPCs appear on product packages as bar codes, which are graphic symbols that are read by optical scanner devices.   \n\nUPCs are assigned by the Uniform Code Council of Dayton, Ohio.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "UniversalProductCode"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 12,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GpcBrickId",
+					"Description": "The unique identifier of a GPC Brick.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GpcBrickId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "ItemElectronicProductCode",
+					"Description": "EPC is the RFID version of the UPC barcode. \nEPC is intended to be used for specific product identification. However, EPC goes beyond UPC by not only identifying the product as an SKU, but also providing access to additional data about the origin and history of the specific units. \nThe EPC tag itself identifies the manufacturer, product, version, and serial number. It's the serial number that takes EPC to the next level. \nThis is the key to data related to specific lots/batches as well as potentially tracking the specific unit's history as it moves through the supply chain.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "ItemElectronicProductCode"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 14,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "ComponentPartIdentifier",
+					"Description": "The Component / Part Identifier (CPID) is used to identify components or parts that are used in the assembly of a larger item. The CPID is part of the GS1 system of standards.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "ComponentPartIdentifier"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 30,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "PluCode",
+					"Description": "The PLU or Price Look-Up code is a 4- or 5-digit number that is primarily used on fresh produce items and will typically appear on a small sticker that is applied to an individual piece of fresh produce. \n\nThe PLU code identifies produce items based upon the commodity, variety and size group. \n\nThey are used by supermarkets to make check-out and inventory control easier, faster and more accurate. \n\nThese numbers are assigned by the International Federation for Produce Standards (IFPS)\n\nEx: WHITE FLESH PEACHES\nPLU Code = 4400",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "PluCode"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 5,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "ResponsibilityCenterId",
+					"Description": "The unique identifier of a Responsibility Center.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "ResponsibilityCenterId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "PatentNumber",
+					"Description": "The patent that is associated with the Product.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "PatentNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 12,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "PatentDate",
+					"Description": "The date that the Patent was granted.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "PatentDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "PatentExpirationDate",
+					"Description": "The date that the patent is scheduled to expire.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "PatentExpirationDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "Trademark",
+					"Description": "A 'trademark' is a brand name or brand mark that is given legal protection.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "Trademark"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "ProductLogo",
+					"Description": "A design, symbol or series of words that identifies the product.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "ProductLogo"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "ProductSymbol",
+					"Description": "A symbol by which the product is known.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "ProductSymbol"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "CopyrightNumber",
+					"Description": "The unique identifier (number) of the copyright granted.\n\nA copyright is legal protection given to a work so that it can only be published or sold by the copyright holder.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "CopyrightNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 18,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "CopyrightDate",
+					"Description": "The date that the copyright was granted.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "CopyrightDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "ProductLicenserName",
+					"Description": "The name of the company that receives a flat fee or royalty for selling the rights to use a trademark, Patent, manufacturing right or process for the Product.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "ProductLicenserName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "ItemSku",
+					"Description": "The Stock Keeping Unit identifier, which is typically used for inventory-related activities.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "ItemSku"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 40,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "PrimaryBrandId",
+					"Description": "The unique identifier of a Brand.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "PrimaryBrandId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "ProductTypeId",
+					"Description": "The unique identifier of a Product Type.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "ProductTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "GovernmentOrganizationPartyId",
+					"Description": "The unique identifier of a Party.",
+					"BaseAttributeReference": {
+						"Entity": "GovernmentService.cdm.json/GovernmentService",
+						"Name": "GovernmentOrganizationPartyId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				}
+			],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://tempdata@asadatalake67xklnc.dfs.core.windows.net/Government_isc/GovernmentService",
+					"delimiter": ",",
+					"multiLine": "false",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://tempdata@asadatalake67xklnc.dfs.core.windows.net/Government_isc/GovernmentService",
+				"Properties": {
+					"LinkedServiceName": "asaworkspace67xklnc-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"ProductId\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductId\"},\"GovernmentServiceName\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceName\"},\"GovernmentServiceShortDescription\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceShortDescription\"},\"GovernmentServiceDescription\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceDescription\"},\"GovernmentServiceInternalName\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceInternalName\"},\"GovernmentServiceIntendedUse\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceIntendedUse\"},\"GovernmentServiceMissionStatement\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceMissionStatement\"},\"GovernmentServiceEligibilityRequirementsStatement\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceEligibilityRequirementsStatement\"},\"GovernmentServiceRestrictionsStatement\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceRestrictionsStatement\"},\"GovernmentServicePrivacyStatement\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServicePrivacyStatement\"},\"GovernmentServiceTargetMarketSegmentStatement\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceTargetMarketSegmentStatement\"},\"GovernmentServiceIntroductionDate\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceIntroductionDate\"},\"GovernmentServicePlannedAbandonmentDate\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServicePlannedAbandonmentDate\"},\"GovernmentServiceActualAbandonmentDate\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceActualAbandonmentDate\"},\"GovernmentServiceInformationContactTelephoneNumber\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceInformationContactTelephoneNumber\"},\"GovernmentServiceContactTelephoneNumber\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceContactTelephoneNumber\"},\"GovernmentServiceInformationUrl\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceInformationUrl\"},\"GlobalTradeItemNumber\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GlobalTradeItemNumber\"},\"GtinName\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GtinName\"},\"EuropeanArticleNumber\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"EuropeanArticleNumber\"},\"UniversalProductCode\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"UniversalProductCode\"},\"GpcBrickId\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GpcBrickId\"},\"ItemElectronicProductCode\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ItemElectronicProductCode\"},\"ComponentPartIdentifier\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ComponentPartIdentifier\"},\"PluCode\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PluCode\"},\"ResponsibilityCenterId\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ResponsibilityCenterId\"},\"PatentNumber\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PatentNumber\"},\"PatentDate\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PatentDate\"},\"PatentExpirationDate\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PatentExpirationDate\"},\"Trademark\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"Trademark\"},\"ProductLogo\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductLogo\"},\"ProductSymbol\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductSymbol\"},\"CopyrightNumber\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"CopyrightNumber\"},\"CopyrightDate\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"CopyrightDate\"},\"ProductLicenserName\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductLicenserName\"},\"ItemSku\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ItemSku\"},\"PrimaryBrandId\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PrimaryBrandId\"},\"ProductTypeId\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductTypeId\"},\"GovernmentOrganizationPartyId\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentOrganizationPartyId\"}}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"GovernmentService\",\"path\":\"GovernmentService.cdm.json/GovernmentService\"},\"description\":\"A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\\n\\nThere are two basic types of products:\\n\\n- Tangible (physical)\\n- Intangible (non-physical) such as services\\n\\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\\n\\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\\n\\nA product typically goes through five stages of development:\\n\\n(1) Idea Stage - involving a thorough evaluation of the potential product\\n\\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\\n\\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\\n\\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\\n\\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\\n\\nProducts tend to be categorized as either:  Industrial goods and consumer goods\\n\\nIndustrial goods are used to produce other products .\\n\\nIndustrial goods may be further divided into:\\n\\n- Raw materials\\n- Equipment\\n- Pre-built materials \\n- Supplies.\\n\\nConsumer goods are intended for consumption by the general public.\\n\\nConsumer goods may be further divided into:\\n\\n- Durable goods\\n- Nondurable goods\\n- Packaged goods\\n\\nA product may be a member of a product family or product line.\\n\\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\\n\\nMembers of a product family frequently have many common parts and assemblies.\\n\\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\\n\\nEx:\\nThe Apple Macintosh family of products consists of the product lines:\\n- Mac mini\\n- MacBook Pro\\n- Mac Pro\\n\\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\\n\\nA Product Family typically is created to address one or five functions:\\n\\n1. To increase profits and not erode the sales of existing products\\n\\n2. To attract additional Markets or Market Segments\\n\\n3. To counter competitor's products\\n\\n4. To fill a gap in an existing Product Family.\\n\\n5. To promote sales of other products in the family line\\n\\nLine Depth refers to the number of products in the product line.\\n\\nLine consistency refers to how closely related the products are that make up the product line.\\n\\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\\n\\nProduct width refers to the number of different product lines sold by a company.\\n\\nProduct mix refers to the total number of products sold in all product lines.\\n\\nLine extension refers to the adding of a new product to a line.\\n\\n\\\"Trading up or brand leveraging\\\" refers to adding a product of better quality to a product line than the other products in that line.\\n\\n\\\"Trading down\\\" refers to adding a product of lesser quality to a product line than the other products in that line.\\n\\nIf a line of products is sold with the same brand name, this is referred to as family branding.\\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\\nProduct-line managers typically have the following responsibilities:\\n- Expansion and composition of a product line\\n- Evaluate the effects of product mixes on the profitability of other items in the line\\n- Planning and allocation of resources to individual products in the line\\nA product is normally associated with a brand strategy - manufacturer, private or generic.\\n\\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\\n\\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\\n\\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\\n\\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\\n\\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\\n\\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\\n\\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\\n\\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\\n\\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\\n\\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\\n\\nBy contrast, family branding has several advantages.\\n\\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\\n\\nReduced or eliminated time for name identification and advertising for name recognition purposes.\",\"primaryKey\":[\"ProductId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Product.\",\"isNullable\":false,\"name\":\"ProductId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceName\"},\"dataType\":\"string\",\"dataTypeLength\":256,\"description\":\"The name of the Product, which normally corresponds to the 'marketing name' of the Government Service.\",\"isNullable\":true,\"name\":\"GovernmentServiceName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceShortDescription\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"The short description of the Government Service\",\"isNullable\":true,\"name\":\"GovernmentServiceShortDescription\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceDescription\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"The description of the Government Service.\",\"isNullable\":true,\"name\":\"GovernmentServiceDescription\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceInternalName\"},\"dataType\":\"string\",\"dataTypeLength\":256,\"description\":\"The internal name by which a Government Service is known.\\n\\nThis normally approximates the business name by which the public identifies the Government Service.\",\"isNullable\":true,\"name\":\"GovernmentServiceInternalName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceIntendedUse\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"The intended use of the government service.\",\"isNullable\":true,\"name\":\"GovernmentServiceIntendedUse\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceMissionStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A statement of the goals and objectives of the associated Government Service.\",\"isNullable\":true,\"name\":\"GovernmentServiceMissionStatement\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceEligibilityRequirementsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A statement of the eligibility requirements of the associated Government Service.\",\"isNullable\":true,\"name\":\"GovernmentServiceEligibilityRequirementsStatement\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceRestrictionsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A statement of the restrictions of the associated Government Service.\",\"isNullable\":true,\"name\":\"GovernmentServiceRestrictionsStatement\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServicePrivacyStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A statement regarding the privacy rules and regulations applicable to the Government Service.\",\"isNullable\":true,\"name\":\"GovernmentServicePrivacyStatement\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceTargetMarketSegmentStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A statement describing the target market segment to be addressed by the Government Service.\",\"isNullable\":true,\"name\":\"GovernmentServiceTargetMarketSegmentStatement\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceIntroductionDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Government Service was introduced.\",\"isNullable\":true,\"name\":\"GovernmentServiceIntroductionDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServicePlannedAbandonmentDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The planned date to discontinue marketing the government service.\\n\\nAbandonment is a component in the decline stage of the product's life cycle characterized by a reduced market demand for the product and an increased number of competing products with similar characteristics.\\n\\nThere are three (3) strategies for abandoning a product:\\n\\n(1)  Reduced marketing and expenditures to maintain profits.\\n\\n(2)  Concentrating on the strongest market segments and eliminating the weaker market segments\\n\\n(3)  Maintain the marketing level until the product is discontinued.\",\"isNullable\":true,\"name\":\"GovernmentServicePlannedAbandonmentDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceActualAbandonmentDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The actual date that the marketing of the government service was discontinued. \\n\\nAbandonment is a component in the decline stage of the product's life cycle characterized by a reduced market demand for the product and an increased number of competing products with similar characteristics.\\n\\nThere are three (3) strategies for abandoning a product:\\n\\n(1)  Reduced marketing and expenditures to maintain profits.\\n\\n(2)  Concentrating on the strongest market segments and eliminating the weaker market segments\\n\\n(3)  Maintain the marketing level until the product is discontinued.\",\"isNullable\":true,\"name\":\"GovernmentServiceActualAbandonmentDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceInformationContactTelephoneNumber\"},\"dataType\":\"decimal\",\"dataTypeLength\":15,\"description\":\"The telephone number to call for information regarding the Government Service.\",\"isNullable\":true,\"scale\":0,\"name\":\"GovernmentServiceInformationContactTelephoneNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceContactTelephoneNumber\"},\"dataType\":\"decimal\",\"dataTypeLength\":15,\"description\":\"The telephone number to contact for service issues.\",\"isNullable\":true,\"scale\":0,\"name\":\"GovernmentServiceContactTelephoneNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentServiceInformationUrl\"},\"dataType\":\"string\",\"dataTypeLength\":2083,\"description\":\"The URL to browse for information regarding the Government Service.\",\"isNullable\":true,\"name\":\"GovernmentServiceInformationUrl\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GlobalTradeItemNumber\"},\"dataType\":\"decimal\",\"dataTypeLength\":14,\"description\":\"The Global Trade Item Number (GTIN) is an identifier for trade items that was developed by GS1.\\n\\nA GTIN can be assigned to only one brick.\",\"isNullable\":true,\"scale\":0,\"name\":\"GlobalTradeItemNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GtinName\"},\"dataType\":\"string\",\"dataTypeLength\":256,\"description\":\"A note, comment or additional information regarding the Product GTIN.\",\"isNullable\":true,\"name\":\"GtinName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"EuropeanArticleNumber\"},\"dataType\":\"decimal\",\"dataTypeLength\":13,\"description\":\"A 13 digit barcoding standard which is a superset of the original 12-digit Universal Product Code (UPC).\\n\\naka International Article Number (abbreviation of EAN retained)\",\"isNullable\":true,\"scale\":0,\"name\":\"EuropeanArticleNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"UniversalProductCode\"},\"dataType\":\"decimal\",\"dataTypeLength\":12,\"description\":\"A system that identifies products by type and by manufacturer.  \\n\\nA UPC consists of eleven (11) digits.  Six (6) indicate the Manufacturer and five (5) digits describe the product.\\n\\nUPCs appear on product packages as bar codes, which are graphic symbols that are read by optical scanner devices.   \\n\\nUPCs are assigned by the Uniform Code Council of Dayton, Ohio.\",\"isNullable\":true,\"scale\":0,\"name\":\"UniversalProductCode\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GpcBrickId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a GPC Brick.\",\"isNullable\":true,\"name\":\"GpcBrickId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ItemElectronicProductCode\"},\"dataType\":\"decimal\",\"dataTypeLength\":14,\"description\":\"EPC is the RFID version of the UPC barcode. \\nEPC is intended to be used for specific product identification. However, EPC goes beyond UPC by not only identifying the product as an SKU, but also providing access to additional data about the origin and history of the specific units. \\nThe EPC tag itself identifies the manufacturer, product, version, and serial number. It's the serial number that takes EPC to the next level. \\nThis is the key to data related to specific lots/batches as well as potentially tracking the specific unit's history as it moves through the supply chain.\",\"isNullable\":true,\"scale\":0,\"name\":\"ItemElectronicProductCode\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ComponentPartIdentifier\"},\"dataType\":\"string\",\"dataTypeLength\":30,\"description\":\"The Component / Part Identifier (CPID) is used to identify components or parts that are used in the assembly of a larger item. The CPID is part of the GS1 system of standards.\",\"isNullable\":true,\"name\":\"ComponentPartIdentifier\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PluCode\"},\"dataType\":\"decimal\",\"dataTypeLength\":5,\"description\":\"The PLU or Price Look-Up code is a 4- or 5-digit number that is primarily used on fresh produce items and will typically appear on a small sticker that is applied to an individual piece of fresh produce. \\n\\nThe PLU code identifies produce items based upon the commodity, variety and size group. \\n\\nThey are used by supermarkets to make check-out and inventory control easier, faster and more accurate. \\n\\nThese numbers are assigned by the International Federation for Produce Standards (IFPS)\\n\\nEx: WHITE FLESH PEACHES\\nPLU Code = 4400\",\"isNullable\":true,\"scale\":0,\"name\":\"PluCode\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ResponsibilityCenterId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Responsibility Center.\",\"isNullable\":false,\"name\":\"ResponsibilityCenterId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PatentNumber\"},\"dataType\":\"string\",\"dataTypeLength\":12,\"description\":\"The patent that is associated with the Product.\",\"isNullable\":true,\"name\":\"PatentNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PatentDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Patent was granted.\",\"isNullable\":true,\"name\":\"PatentDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PatentExpirationDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the patent is scheduled to expire.\",\"isNullable\":true,\"name\":\"PatentExpirationDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"Trademark\"},\"dataType\":\"binary\",\"description\":\"A 'trademark' is a brand name or brand mark that is given legal protection.\",\"isNullable\":true,\"name\":\"Trademark\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductLogo\"},\"dataType\":\"binary\",\"description\":\"A design, symbol or series of words that identifies the product.\",\"isNullable\":true,\"name\":\"ProductLogo\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductSymbol\"},\"dataType\":\"binary\",\"description\":\"A symbol by which the product is known.\",\"isNullable\":true,\"name\":\"ProductSymbol\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"CopyrightNumber\"},\"dataType\":\"string\",\"dataTypeLength\":18,\"description\":\"The unique identifier (number) of the copyright granted.\\n\\nA copyright is legal protection given to a work so that it can only be published or sold by the copyright holder.\",\"isNullable\":true,\"name\":\"CopyrightNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"CopyrightDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the copyright was granted.\",\"isNullable\":true,\"name\":\"CopyrightDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductLicenserName\"},\"dataType\":\"string\",\"dataTypeLength\":256,\"description\":\"The name of the company that receives a flat fee or royalty for selling the rights to use a trademark, Patent, manufacturing right or process for the Product.\",\"isNullable\":true,\"name\":\"ProductLicenserName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ItemSku\"},\"dataType\":\"string\",\"dataTypeLength\":40,\"description\":\"The Stock Keeping Unit identifier, which is typically used for inventory-related activities.\",\"isNullable\":true,\"name\":\"ItemSku\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"PrimaryBrandId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Brand.\",\"isNullable\":true,\"name\":\"PrimaryBrandId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"ProductTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Product Type.\",\"isNullable\":true,\"name\":\"ProductTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"GovernmentService.cdm.json/GovernmentService\",\"name\":\"GovernmentOrganizationPartyId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Party.\",\"isNullable\":true,\"name\":\"GovernmentOrganizationPartyId\"}]}}}",
+			"Description": "A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\n\nThere are two basic types of products:\n\n- Tangible (physical)\n- Intangible (non-physical) such as services\n\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\n\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\n\nA product typically goes through five stages of development:\n\n(1) Idea Stage - involving a thorough evaluation of the potential product\n\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\n\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\n\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\n\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\n\nProducts tend to be categorized as either:  Industrial goods and consumer goods\n\nIndustrial goods are used to produce other products .\n\nIndustrial goods may be further divided into:\n\n- Raw materials\n- Equipment\n- Pre-built materials \n- Supplies.\n\nConsumer goods are intended for consumption by the general public.\n\nConsumer goods may be further divided into:\n\n- Durable goods\n- Nondurable goods\n- Packaged goods\n\nA product may be a member of a product family or product line.\n\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\n\nMembers of a product family frequently have many common parts and assemblies.\n\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\n\nEx:\nThe Apple Macintosh family of products consists of the product lines:\n- Mac mini\n- MacBook Pro\n- Mac Pro\n\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\n\nA Product Family typically is created to address one or five functions:\n\n1. To increase profits and not erode the sales of existing products\n\n2. To attract additional Markets or Market Segments\n\n3. To counter competitor's products\n\n4. To fill a gap in an existing Product Family.\n\n5. To promote sales of other products in the family line\n\nLine Depth refers to the number of products in the product line.\n\nLine consistency refers to how closely related the products are that make up the product line.\n\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\n\nProduct width refers to the number of different product lines sold by a company.\n\nProduct mix refers to the total number of products sold in all product lines.\n\nLine extension refers to the adding of a new product to a line.\n\n\"Trading up or brand leveraging\" refers to adding a product of better quality to a product line than the other products in that line.\n\n\"Trading down\" refers to adding a product of lesser quality to a product line than the other products in that line.\n\nIf a line of products is sold with the same brand name, this is referred to as family branding.\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\nProduct-line managers typically have the following responsibilities:\n- Expansion and composition of a product line\n- Evaluate the effects of product mixes on the profitability of other items in the line\n- Planning and allocation of resources to individual products in the line\nA product is normally associated with a brand strategy - manufacturer, private or generic.\n\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\n\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\n\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\n\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\n\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\n\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\n\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\n\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\n\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\n\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\n\nBy contrast, family branding has several advantages.\n\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\n\nReduced or eliminated time for name identification and advertising for name recognition purposes.",
+			"DisplayFolderInfo": "{\"name\":\"Product\",\"colorCode\":\"\"}",
+			"PrimaryKeys": "ProductId",
+			"spark.sql.sources.provider": "csv",
+			"sql:IsAppendOnly": false
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}

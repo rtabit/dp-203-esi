@@ -1,0 +1,26 @@
+{
+	"name": "relationship-bqdewezvor",
+	"properties": {
+		"Name": "relationship-bqdewezvor",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "Government_isc"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Vendor",
+		"ToTableName": "Item",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "VendorId",
+				"ToColumnName": "VendorId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Vendor.cdm.json/Vendor\",\"toEntity\":\"Item.cdm.json/Item\",\"joinPairs\":[{\"fromAttribute\":\"VendorId\",\"toAttribute\":\"VendorId\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}
