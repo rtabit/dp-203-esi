@@ -1,0 +1,308 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "SparkPool01",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "8adb09e8-6e78-40ec-a391-9262a756feea"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"1aebcbee-0092-4cd6-b43e-4def258d3013": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "829",
+										"3": 4,
+										"4": "30.500000000000000000",
+										"5": "122.000000000000000000",
+										"6": "20191231",
+										"7": "38.640000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									},
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "3683",
+										"3": 1,
+										"4": "34.440000000000000000",
+										"5": "34.440000000000000000",
+										"6": "20191231",
+										"7": "9.940000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									},
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "812",
+										"3": 1,
+										"4": "28.630000000000000000",
+										"5": "28.630000000000000000",
+										"6": "20191231",
+										"7": "7.200000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									},
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "117",
+										"3": 2,
+										"4": "25.500000000000000000",
+										"5": "51.000000000000000000",
+										"6": "20191231",
+										"7": "15.660000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									},
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "406",
+										"3": 3,
+										"4": "36.590000000000000000",
+										"5": "109.770000000000000000",
+										"6": "20191231",
+										"7": "34.710000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									},
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "231",
+										"3": 3,
+										"4": "25.580000000000000000",
+										"5": "76.740000000000000000",
+										"6": "20191231",
+										"7": "25.020000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									},
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "2689",
+										"3": 3,
+										"4": "24.000000000000000000",
+										"5": "72.000000000000000000",
+										"6": "20191231",
+										"7": "19.770000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									},
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "2095",
+										"3": 4,
+										"4": "32.380000000000000000",
+										"5": "129.520000000000000000",
+										"6": "20191231",
+										"7": "36.000000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									},
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "92",
+										"3": 1,
+										"4": "15.550000000000000000",
+										"5": "15.550000000000000000",
+										"6": "20191231",
+										"7": "4.730000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									},
+									{
+										"0": "7365e3cb-c098-4001-83ab-68693b87809d",
+										"1": "2",
+										"2": "1912",
+										"3": 1,
+										"4": "24.620000000000000000",
+										"5": "24.620000000000000000",
+										"6": "20191231",
+										"7": "7.390000000000000000",
+										"8": 12,
+										"9": 52,
+										"10": "9559"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "TransactionId",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "CustomerId",
+										"type": "int"
+									},
+									{
+										"key": "2",
+										"name": "ProductId",
+										"type": "smallint"
+									},
+									{
+										"key": "3",
+										"name": "Quantity",
+										"type": "tinyint"
+									},
+									{
+										"key": "4",
+										"name": "Price",
+										"type": "decimal"
+									},
+									{
+										"key": "5",
+										"name": "TotalAmount",
+										"type": "decimal"
+									},
+									{
+										"key": "6",
+										"name": "TransactionDate",
+										"type": "int"
+									},
+									{
+										"key": "7",
+										"name": "ProfitAmount",
+										"type": "decimal"
+									},
+									{
+										"key": "8",
+										"name": "Hour",
+										"type": "tinyint"
+									},
+									{
+										"key": "9",
+										"name": "Minute",
+										"type": "tinyint"
+									},
+									{
+										"key": "10",
+										"name": "StoreId",
+										"type": "smallint"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/e9e3642f-d367-4a55-a303-99ef26cea082/resourceGroups/data-engineering-synapse-67xklnc/providers/Microsoft.Synapse/workspaces/asaworkspace67xklnc/bigDataPools/SparkPool01",
+				"name": "SparkPool01",
+				"type": "Spark",
+				"endpoint": "https://asaworkspace67xklnc.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/SparkPool01",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://wwi-02@asadatalake67xklnc.dfs.core.windows.net/sale-small/Year=2019/Quarter=Q4/Month=12/Day=20191231/sale-small-20191231-snappy.parquet', format='parquet')\r\n",
+					"display(df.limit(10))"
+				],
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df.write.parquet('abfss://wwi-02@asadatalake67xklnc.dfs.core.windows.net/sale-small/Year=2019/Quarter=Q4/Month=12/Day=20161231/sale-small-20161231-snappy-test.parquet')"
+				],
+				"execution_count": 4
+			}
+		]
+	}
+}

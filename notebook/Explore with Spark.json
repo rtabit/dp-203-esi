@@ -1,0 +1,1261 @@
+{
+	"name": "Explore with Spark",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "SparkPool01",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "58135020-d3cf-46ca-b293-05181002dbe6"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"3f7e3ab3-ada5-4452-bf49-cf684dd496e0": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "1c97cc49-d769-4cf7-8c5f-ae7be8c6cbf9",
+										"1": "91427",
+										"2": "2731",
+										"3": "2",
+										"4": "29.29",
+										"5": "64.438",
+										"6": "20170501",
+										"7": "21.406",
+										"8": "11",
+										"9": "9",
+										"10": "3516"
+									},
+									{
+										"0": "1c97cc49-d769-4cf7-8c5f-ae7be8c6cbf9",
+										"1": "91427",
+										"2": "2440",
+										"3": "1",
+										"4": "19.33",
+										"5": "21.263",
+										"6": "20170501",
+										"7": "5.665",
+										"8": "11",
+										"9": "9",
+										"10": "3516"
+									},
+									{
+										"0": "1c97cc49-d769-4cf7-8c5f-ae7be8c6cbf9",
+										"1": "91427",
+										"2": "3514",
+										"3": "3",
+										"4": "34.78",
+										"5": "114.774",
+										"6": "20170501",
+										"7": "37.323",
+										"8": "11",
+										"9": "9",
+										"10": "3516"
+									},
+									{
+										"0": "1c97cc49-d769-4cf7-8c5f-ae7be8c6cbf9",
+										"1": "91427",
+										"2": "213",
+										"3": "4",
+										"4": "29.07",
+										"5": "127.908",
+										"6": "20170501",
+										"7": "32.208",
+										"8": "11",
+										"9": "9",
+										"10": "3516"
+									},
+									{
+										"0": "1c97cc49-d769-4cf7-8c5f-ae7be8c6cbf9",
+										"1": "91427",
+										"2": "167",
+										"3": "4",
+										"4": "28.69",
+										"5": "126.236",
+										"6": "20170501",
+										"7": "41.096",
+										"8": "11",
+										"9": "9",
+										"10": "3516"
+									},
+									{
+										"0": "1c97cc49-d769-4cf7-8c5f-ae7be8c6cbf9",
+										"1": "91427",
+										"2": "50",
+										"3": "3",
+										"4": "25.46",
+										"5": "84.018",
+										"6": "20170501",
+										"7": "22.209",
+										"8": "11",
+										"9": "9",
+										"10": "3516"
+									},
+									{
+										"0": "3ea01928-6185-40af-bc37-483da893adad",
+										"1": "91431",
+										"2": "1710",
+										"3": "1",
+										"4": "26.04",
+										"5": "28.644",
+										"6": "20170501",
+										"7": "7.26",
+										"8": "11",
+										"9": "18",
+										"10": "2818"
+									},
+									{
+										"0": "3ea01928-6185-40af-bc37-483da893adad",
+										"1": "91431",
+										"2": "2412",
+										"3": "1",
+										"4": "26.76",
+										"5": "29.436",
+										"6": "20170501",
+										"7": "9.185",
+										"8": "11",
+										"9": "18",
+										"10": "2818"
+									},
+									{
+										"0": "3ea01928-6185-40af-bc37-483da893adad",
+										"1": "91431",
+										"2": "3442",
+										"3": "2",
+										"4": "25.99",
+										"5": "57.178",
+										"6": "20170501",
+										"7": "21.23",
+										"8": "11",
+										"9": "18",
+										"10": "2818"
+									},
+									{
+										"0": "3ea01928-6185-40af-bc37-483da893adad",
+										"1": "91431",
+										"2": "2474",
+										"3": "4",
+										"4": "28.11",
+										"5": "123.684",
+										"6": "20170501",
+										"7": "44.924",
+										"8": "11",
+										"9": "18",
+										"10": "2818"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "TransactionId",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "CustomerId",
+										"type": "int"
+									},
+									{
+										"key": "2",
+										"name": "ProductId",
+										"type": "int"
+									},
+									{
+										"key": "3",
+										"name": "Quantity",
+										"type": "int"
+									},
+									{
+										"key": "4",
+										"name": "Price",
+										"type": "double"
+									},
+									{
+										"key": "5",
+										"name": "TotalAmount",
+										"type": "double"
+									},
+									{
+										"key": "6",
+										"name": "TransactionDate",
+										"type": "int"
+									},
+									{
+										"key": "7",
+										"name": "ProfitAmount",
+										"type": "double"
+									},
+									{
+										"key": "8",
+										"name": "Hour",
+										"type": "int"
+									},
+									{
+										"key": "9",
+										"name": "Minute",
+										"type": "int"
+									},
+									{
+										"key": "10",
+										"name": "StoreId",
+										"type": "int"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"58c2bd49-d465-46ce-ba7a-510d47dcdbf0": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									null,
+									{
+										"0": "3",
+										"1": "2641"
+									},
+									{
+										"0": "3",
+										"1": "1365"
+									},
+									{
+										"0": "3",
+										"1": "110"
+									},
+									{
+										"0": "3",
+										"1": "220"
+									},
+									{
+										"0": "3",
+										"1": "4581"
+									},
+									{
+										"0": "3",
+										"1": "2"
+									},
+									{
+										"0": "11",
+										"1": "3323"
+									},
+									{
+										"0": "11",
+										"1": "70"
+									},
+									{
+										"0": "11",
+										"1": "32"
+									},
+									{
+										"0": "11",
+										"1": "194"
+									},
+									{
+										"0": "11",
+										"1": "4070"
+									},
+									{
+										"0": "11",
+										"1": "4763"
+									},
+									{
+										"0": "11",
+										"1": "582"
+									},
+									{
+										"0": "41",
+										"1": "4660"
+									},
+									{
+										"0": "41",
+										"1": "88"
+									},
+									{
+										"0": "41",
+										"1": "3564"
+									},
+									{
+										"0": "41",
+										"1": "186"
+									},
+									{
+										"0": "41",
+										"1": "3321"
+									},
+									{
+										"0": "41",
+										"1": "84"
+									},
+									{
+										"0": "41",
+										"1": "134"
+									},
+									{
+										"0": "41",
+										"1": "244"
+									},
+									{
+										"0": "41",
+										"1": "2726"
+									},
+									{
+										"0": "41",
+										"1": "3009"
+									},
+									{
+										"0": "41",
+										"1": "1091"
+									},
+									{
+										"0": "41",
+										"1": "126"
+									},
+									{
+										"0": "42",
+										"1": "3256"
+									},
+									{
+										"0": "42",
+										"1": "4544"
+									},
+									{
+										"0": "42",
+										"1": "229"
+									},
+									{
+										"0": "42",
+										"1": "2836"
+									},
+									{
+										"0": "42",
+										"1": "57"
+									},
+									{
+										"0": "42",
+										"1": "4843"
+									},
+									{
+										"0": "42",
+										"1": "2996"
+									},
+									{
+										"0": "42",
+										"1": "35"
+									},
+									{
+										"0": "43",
+										"1": "412"
+									},
+									{
+										"0": "43",
+										"1": "4220"
+									},
+									{
+										"0": "43",
+										"1": "3478"
+									},
+									{
+										"0": "43",
+										"1": "2776"
+									},
+									{
+										"0": "43",
+										"1": "2031"
+									},
+									{
+										"0": "43",
+										"1": "153"
+									},
+									{
+										"0": "43",
+										"1": "30"
+									},
+									{
+										"0": "52",
+										"1": "609"
+									},
+									{
+										"0": "52",
+										"1": "3604"
+									},
+									{
+										"0": "52",
+										"1": "619"
+									},
+									{
+										"0": "52",
+										"1": "209"
+									},
+									{
+										"0": "52",
+										"1": "160"
+									},
+									{
+										"0": "52",
+										"1": "2711"
+									},
+									{
+										"0": "52",
+										"1": "4830"
+									},
+									{
+										"0": "52",
+										"1": "686"
+									},
+									{
+										"0": "52",
+										"1": "18"
+									},
+									{
+										"0": "52",
+										"1": "4260"
+									},
+									{
+										"0": "61",
+										"1": "176"
+									},
+									{
+										"0": "61",
+										"1": "3663"
+									},
+									{
+										"0": "61",
+										"1": "112"
+									},
+									{
+										"0": "61",
+										"1": "1302"
+									},
+									{
+										"0": "61",
+										"1": "1329"
+									},
+									{
+										"0": "61",
+										"1": "2482"
+									},
+									{
+										"0": "61",
+										"1": "2655"
+									},
+									{
+										"0": "61",
+										"1": "4196"
+									},
+									{
+										"0": "61",
+										"1": "2751"
+									},
+									{
+										"0": "61",
+										"1": "2430"
+									},
+									{
+										"0": "61",
+										"1": "37"
+									},
+									{
+										"0": "64",
+										"1": "48"
+									},
+									{
+										"0": "64",
+										"1": "2551"
+									},
+									{
+										"0": "64",
+										"1": "3039"
+									},
+									{
+										"0": "64",
+										"1": "263"
+									},
+									{
+										"0": "64",
+										"1": "2229"
+									},
+									{
+										"0": "64",
+										"1": "3779"
+									},
+									{
+										"0": "64",
+										"1": "3352"
+									},
+									{
+										"0": "64",
+										"1": "1140"
+									},
+									{
+										"0": "64",
+										"1": "169"
+									},
+									{
+										"0": "64",
+										"1": "2240"
+									},
+									{
+										"0": "64",
+										"1": "1397"
+									},
+									{
+										"0": "64",
+										"1": "1447"
+									},
+									{
+										"0": "70",
+										"1": "1911"
+									},
+									{
+										"0": "70",
+										"1": "4109"
+									},
+									{
+										"0": "70",
+										"1": "226"
+									},
+									{
+										"0": "70",
+										"1": "3645"
+									},
+									{
+										"0": "70",
+										"1": "1564"
+									},
+									{
+										"0": "70",
+										"1": "3514"
+									},
+									{
+										"0": "70",
+										"1": "1189"
+									},
+									{
+										"0": "70",
+										"1": "19"
+									},
+									{
+										"0": "70",
+										"1": "2549"
+									},
+									{
+										"0": "70",
+										"1": "2648"
+									},
+									{
+										"0": "70",
+										"1": "4317"
+									},
+									{
+										"0": "88",
+										"1": "808"
+									},
+									{
+										"0": "88",
+										"1": "3231"
+									},
+									{
+										"0": "88",
+										"1": "1604"
+									},
+									{
+										"0": "88",
+										"1": "172"
+									},
+									{
+										"0": "88",
+										"1": "3004"
+									},
+									{
+										"0": "88",
+										"1": "7"
+									},
+									{
+										"0": "88",
+										"1": "3551"
+									},
+									{
+										"0": "88",
+										"1": "2461"
+									},
+									{
+										"0": "88",
+										"1": "1062"
+									},
+									{
+										"0": "91",
+										"1": "6"
+									},
+									{
+										"0": "91",
+										"1": "1271"
+									},
+									{
+										"0": "91",
+										"1": "2465"
+									},
+									{
+										"0": "91",
+										"1": "607"
+									},
+									{
+										"0": "91",
+										"1": "2995"
+									},
+									{
+										"0": "91",
+										"1": "4622"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "CustomerId",
+										"type": "int"
+									},
+									{
+										"key": "1",
+										"name": "ProductId",
+										"type": "int"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"4d1f08da-204e-49ac-ab09-3772481af6bc": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "610",
+										"3": "4",
+										"4": "35.790000000000000000",
+										"5": "157.4760000000000127151622564",
+										"6": "20170502",
+										"7": "53.63600000000000433075797446",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									},
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "1321",
+										"3": "3",
+										"4": "22.080000000000000000",
+										"5": "72.86400000000000588329385209",
+										"6": "20170502",
+										"7": "19.66800000000000158806301442",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									},
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "4364",
+										"3": "1",
+										"4": "16.150000000000000000",
+										"5": "17.76500000000000143440814782",
+										"6": "20170502",
+										"7": "5.896000000000000476063632959",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									},
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "4691",
+										"3": "2",
+										"4": "35.840000000000000000",
+										"5": "78.84800000000000636646291241",
+										"6": "20170502",
+										"7": "24.20000000000000195399252334",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									},
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "4691",
+										"3": "3",
+										"4": "35.840000000000000000",
+										"5": "118.2720000000000095496943686",
+										"6": "20170502",
+										"7": "36.30000000000000293098878501",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									},
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "2392",
+										"3": "1",
+										"4": "32.900000000000000000",
+										"5": "36.19000000000000292210700081",
+										"6": "20170502",
+										"7": "10.41700000000000084110496346",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									},
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "1347",
+										"3": "2",
+										"4": "21.810000000000000000",
+										"5": "47.98200000000000387423426673",
+										"6": "20170502",
+										"7": "12.82600000000000103561603737",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									},
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "402",
+										"3": "2",
+										"4": "25.090000000000000000",
+										"5": "55.19800000000000445687931006",
+										"6": "20170502",
+										"7": "12.84800000000000103739239421",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									},
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "56",
+										"3": "3",
+										"4": "33.300000000000000000",
+										"5": "109.8900000000000088729024128",
+										"6": "20170502",
+										"7": "29.43600000000000237676545112",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									},
+									{
+										"0": "586682a8-db73-4e45-a376-c7553a44b248",
+										"1": "2",
+										"2": "157",
+										"3": "2",
+										"4": "28.870000000000000000",
+										"5": "63.51400000000000512834219535",
+										"6": "20170502",
+										"7": "14.43200000000000116529008665",
+										"8": "23",
+										"9": "17",
+										"10": "9559"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "TransactionId",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "CustomerId",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "ProductId",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Quantity",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "Price",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "TotalAmount",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "TransactionDateId",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "ProfitAmount",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "Hour",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "Minute",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "StoreId",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/e9e3642f-d367-4a55-a303-99ef26cea082/resourceGroups/data-engineering-synapse-67xklnc/providers/Microsoft.Synapse/workspaces/asaworkspace67xklnc/bigDataPools/SparkPool01",
+				"name": "SparkPool01",
+				"type": "Spark",
+				"endpoint": "https://asaworkspace67xklnc.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/SparkPool01",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "markdown",
+				"source": [
+					"# Exploring and fixing data with Synapse Spark\r\n",
+					"\r\n",
+					"In this task, you will use a Synapse Spark notebook to explore a few of the files in the **wwi-02/sale-poc** folder in the data lake. You will also use Python code to fix the issues with the **sale-20170502.csv** file.\r\n",
+					"\r\n",
+					"1. First, attach this notebook to the **SparkPool01** Spark pool.\r\n",
+					"2. In the code cell below, replace **asadatalake*SUFFIX*** `with the name of the primary data lake storage account associated with your Syanpse workspace. Then execute the cell by selecting the **Run cell** button that becomes visible when you select the cell.\r\n",
+					"\r\n",
+					"> **Note**: The cell may take some time to run because the spark cluster must be started."
+				]
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"adls_account_name = 'asadatalake67xklnc'"
+				],
+				"execution_count": 1
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"## Exploring files with Spark\r\n",
+					"\r\n",
+					"1. The first step in exploring data using Synapse Spark is to load a file from the data lake. For this, we'll use the **spark.read.load()** method of the **SparkSession** to load the **sale-20170501.csv** file into a [DataFrame](https://spark.apache.org/docs/2.2.0/sql-programming-guide.html#datasets-and-dataframes).\r\n",
+					""
+				]
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"# First, load the file `sale-20170501.csv` file, which we know from our previous exploration to be formatted correctly.\r\n",
+					"# Note the use of the `header` and `inferSchema` parameters. Header indicates the first row of the file contains column headers,\r\n",
+					"# and `inferSchema` instruct Spark to use data within the file to infer data types.\r\n",
+					"df = spark.read.load(f'abfss://wwi-02@{adls_account_name}.dfs.core.windows.net/sale-poc/sale-20170501.csv', format='csv', header=True, inferSchema=True)"
+				],
+				"execution_count": 2
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"## View the contents of the DataFrame\r\n",
+					"\r\n",
+					"With the data from the **sale-20170501.csv** file loaded into a data frame, we can now use various methods of a data frame to explore the properties of the data.\r\n",
+					"\r\n",
+					"1. Let's look at the data as it was imported. Execute the cell below to view and inspect the data in the data frame."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"diagram": {
+						"activateDiagramType": 1,
+						"chartConfig": {
+							"category": "bar",
+							"keys": [
+								"TransactionId"
+							],
+							"values": [
+								"CustomerId"
+							],
+							"yLabel": "CustomerId",
+							"xLabel": "TransactionId",
+							"aggregation": "SUM",
+							"aggByBackend": false
+						},
+						"aggData": "{\"CustomerId\":{\"cdd2ed88-8aae-4295-884a-ac4d40c3c33c\":44,\"e067fc11-e07d-4517-bc93-f7dc4b44f35e\":18}}",
+						"isSummary": false,
+						"previewData": {
+							"filter": null
+						},
+						"isSql": false
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(df.limit(10))"
+				],
+				"execution_count": 3
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"2. Like we saw during exploration with the SQL on-demand capabilities of Azure Synapse, Spark allows us to view and query against the data contained within files. \r\n",
+					"\r\n",
+					"3. Now, use the **printSchema()** method of the data frame to view the results of using the **inferSchema** parameter when creating the data frame. Execute the cell below and observe the output."
+				]
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"# Now, print the inferred schema. We will need this information below to help with the missing headers in the May 2, 2017 file.\r\n",
+					"df.printSchema()"
+				],
+				"execution_count": 4
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"4. The **printSchema** method outputs both field names and data types that are based on the Spark engine's evaluation of the data contained within each field.\r\n",
+					"\r\n",
+					"    > We can use this information later to help define the schema for the poorly formed **sale-20170502.csv** file. In addition to the field names and data types, we should note the number of features or columns contained in the file. In this case, note that there are 11 fields. That will be used to determine where to split the single row of data.\r\n",
+					"\r\n",
+					"5. As an example of further exploration we can do, run the cell below to create and display a new data frame that contains an ordered list of distinct Customer and Product Id pairings. We can use these types of functions to find invalid or empty values quickly in targeted fields."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"diagram": {
+						"activateDiagramType": 1,
+						"chartConfig": {
+							"category": "bar",
+							"keys": [],
+							"values": [
+								"ProductId"
+							],
+							"yLabel": "ProductId",
+							"xLabel": "",
+							"aggregation": "SUM",
+							"aggByBackend": false
+						},
+						"aggData": "{\"ProductId\":{\"\":189206}}",
+						"isSummary": false,
+						"previewData": {
+							"filter": null
+						},
+						"isSql": false
+					},
+					"collapsed": false
+				},
+				"source": [
+					"# Create a new data frame containing a list of distinct CustomerId and ProductId values in descending order of the CustomerId.\r\n",
+					"df_distinct_products = df.select('CustomerId', 'ProductId').distinct().orderBy('CustomerId')\r\n",
+					"\r\n",
+					"# Display the first 100 rows of the resulting data frame.\r\n",
+					"display(df_distinct_products.limit(100))"
+				],
+				"execution_count": 5
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"6. Next, let's attempt to open and explore the **sale-20170502.csv** file using the **load()** method, as we did above."
+				]
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"# Next, let's try to read in the May 2, 2017 file using the same `load()` method we used for the first file.\r\n",
+					"df = spark.read.load(f'abfss://wwi-02@{adls_account_name}.dfs.core.windows.net/sale-poc/sale-20170502.csv', format='csv')\r\n",
+					"display(df.limit(10))"
+				],
+				"execution_count": 6
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"7. As we saw in T-SQL, we receive a similar error in Spark that the number of columns processed may have exceeded limit of 20480 columns. To work with the data in this file, we need to use more advanced methods, as you will see in the next section below.\n",
+					""
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"## Handling and fixing poorly formed CSV files\r\n",
+					"\r\n",
+					"> The steps below provide example code for fixing the poorly-formed CSV file, **sale-20170502.csv** we discovered during exploration of the files in the **wwi-02/sale-poc** folder. This is just one of many ways to handle \"fixing\" a poorly-formed CSV file using Spark.\r\n",
+					"\r\n",
+					"1. To \"fix\" the bad file, we need to take a programmatic approach, using Python to read in the contents of the file and then parse them to put them into the proper shape.\r\n",
+					"\r\n",
+					"    > To handle the data being in a single row, we can use the **textFile()** method of our **SparkContext** to read the file as a collection of rows into a resilient distributed dataset (RDD). This allows us to get around the errors around the number of columns because we are essentially getting a single string value stored in a single column.\r\n",
+					"\r\n",
+					"2. Execute the cell below to load the RDD with data from the file."
+				]
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"# Import the NumPy library. NumPy is a python library used for working with arrays.\r\n",
+					"import numpy as np\r\n",
+					"\r\n",
+					"# Read the CSV file into a resilient distributed dataset (RDD) as a text file. This will read each row of the file into rows in an RDD.\r\n",
+					"rdd = sc.textFile(f'abfss://wwi-02@{adls_account_name}.dfs.core.windows.net/sale-poc/sale-20170502.csv')"
+				],
+				"execution_count": 7
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"3. With the data now stored in an RDD, we can access the first, and only, populated row in the RDD, and split that into individual fields. We know from our inspection of the file in Notepad++ that it all the fields are separated by a comma (,), so let's start by splitting on that to create an array of field values. Execute the cell below to create a data array."
+				]
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"# Since we know there is only one row, grab the first row of the RDD and split in on the field delimiter (comma).\r\n",
+					"data = rdd.first().split(',')\r\n",
+					"\r\n",
+					"field_count = len(data)\r\n",
+					"# Print out the count of fields read into the array.\r\n",
+					"print(field_count)"
+				],
+				"execution_count": 8
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"4. By splitting the row on the field delimiter, we created an array of all the individual field values in the file, the count of which you can see above.\n",
+					"\n",
+					"5. Now, run the cell below to do a quick calculation on the expected number of rows that will be generated by parsing every 11 fields into a single row."
+				]
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"import math\r\n",
+					"\r\n",
+					"expected_row_count = math.floor(field_count / 11)\r\n",
+					"print(f'The expected row count is: {expected_row_count}')"
+				],
+				"execution_count": 9
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"6. Next, let's create an array to store the data associated with each \"row\".\r\n",
+					"\r\n",
+					"    > We will set the max_index to the number of columns that are expected in each row. We know from our exploration of other files in the **wwi-02/sale-poc** folder that they contain 11 columns, so that is the value we will set.\r\n",
+					"\r\n",
+					"7. In addition to setting variables, we will use the cell below to loop through the **data** array and assign every 11 values to a row. By doing this, we are able to \"split\" the data that was once a single row into appropriate rows containing the proper data and columns from the file.\r\n",
+					"\r\n",
+					"8. Execute the cell below to create an array of rows from the file data."
+				]
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"# Create an array to store the data associated with each \"row\". Set the max_index to the number of columns that are in each row. This is 11, which we noted above when viewing the schema of the May 1 file.\r\n",
+					"row_list = []\r\n",
+					"max_index = 11\r\n",
+					"\r\n",
+					"# Now, we are going to loop through the array of values extracted from the single row of the file and build rows consisting of 11 columns.\r\n",
+					"while max_index <= len(data):\r\n",
+					"    row = [data[i] for i in np.arange(max_index-11, max_index)]\r\n",
+					"    row_list.append(row)\r\n",
+					"\r\n",
+					"    max_index += 11\r\n",
+					"\r\n",
+					"print(f'The row array contains {len(row_list)} rows. The expected number of rows was {expected_row_count}.')"
+				],
+				"execution_count": 10
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"9. The last thing we need to do to be able to work with the file data as rows is to read it into a Spark DataFrame. In the cell below, we use the **createDataFrame()** method to convert the **row_list** array into a data frame, which also adding names for the columns. Column names are based on the schema we observed in the well formatted files in the **wwi-02/sale-poc** directory.\r\n",
+					"\r\n",
+					"10. Execute the cell below to create a data frame containing row data from the file and then display the first 10 rows."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"diagram": {
+						"activateDiagramType": 1,
+						"chartConfig": {
+							"category": "bar",
+							"keys": [
+								"TransactionId"
+							],
+							"values": [
+								"TransactionId"
+							],
+							"yLabel": "TransactionId",
+							"xLabel": "TransactionId",
+							"aggregation": "COUNT",
+							"aggByBackend": false
+						},
+						"aggData": "{\"TransactionId\":{\"5455a4b4-62bd-401a-b5c6-79ea24f30531\":5,\"a4116581-5aad-416a-b767-aefa516737b1\":5}}",
+						"isSummary": false,
+						"previewData": {
+							"filter": null
+						},
+						"isSql": false
+					},
+					"collapsed": false
+				},
+				"source": [
+					"# Finally, we can use the row_list we created above to create a DataFrame. We can add to this a schema parameter, which contains the column names we saw in the schema of the first file.\r\n",
+					"df_fixed = spark.createDataFrame(row_list,schema=['TransactionId', 'CustomerId', 'ProductId', 'Quantity', 'Price', 'TotalAmount', 'TransactionDateId', 'ProfitAmount', 'Hour', 'Minute', 'StoreId'])\r\n",
+					"display(df_fixed.limit(10))"
+				],
+				"execution_count": 11
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"## Write the \"fixed\" file into the data lake\r\n",
+					"\r\n",
+					"1. The last step we will take as part of our exploration and file fixing process is to write the data back into the data lake, so it can be ingested following the same process as the other files in the **wwi-02/sale-poc** folder.\r\n",
+					"\r\n",
+					"2. Execute the cell below to save the data frame into the data lake a series of files in a folder named **sale-20170502-fixed**.\r\n",
+					"\r\n",
+					"    > Note: Spark parallelizes workloads across worker nodes, so when saving files, you will notice they are saved as a collection \"part\" files, and not as a single file. While there are some libraries you can use to create a single file, it is helpful to get used to working with files generated via Spark notebooks as they are natively created.\r\n",
+					""
+				]
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"df_fixed.write.format('csv').option('header',True).mode('overwrite').option('sep',',').save(f'abfss://wwi-02@{adls_account_name}.dfs.core.windows.net/sale-poc/sale-20170502-fixed')"
+				],
+				"execution_count": 12
+			},
+			{
+				"cell_type": "markdown",
+				"source": [
+					"## Inspect the fixed file in the data lake\r\n",
+					"\r\n",
+					"1. With the fixed file written to the data lake, you can quickly inpsect it to verify the files are now formatted properly. Select the **wwi-02** tab above to view the **sale-poc** folder.\r\n",
+					"2. Refresh the folder view (expand the **More** menu if necessary) and then open the **sale-20170502-fixed** folder.\r\n",
+					"3. In the **sale-20170502-fixed** folder, right-click the first file whose name begins with **part** and whose extension is **.csv** and select **Preview** from the context menu.\r\n",
+					"4. In the **Preview** dialog, verify you see the proper columns and that the data looks valid in each field.\r\n",
+					"\r\n",
+					"## Wrap-up\r\n",
+					"\r\n",
+					"Throughout this exercise, you used a Spark notebook to explore data stored within files in the data lake. You used Python code to extract data from a poorly formatted CSV file, assemble the data from that file into proper rows, and then write the \"fixed\" file back out into your data lake.\r\n",
+					"\r\n",
+					"You can now return to the lab guide to continue with the next section of Lab 2.\r\n",
+					""
+				]
+			}
+		]
+	}
+}
